@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"real_contracts/solana_supply.sol": "Simple_Contract"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"real_contracts/solana_supply.sol": {
+			"keccak256": "0x148763a68de73b621322c62d590fb45bfa8014256ad7141d18ccaffee243a703",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dfc4fcda659d5f3c75820b4e41896837ed262333f9c0df272059fe34e78fdcba",
+				"dweb:/ipfs/Qmah3EmwQLZrpqPswVJqyRcfWroLNC5T79DonPWa6sHTNd"
+			]
+		}
+	},
+	"version": 1
+}

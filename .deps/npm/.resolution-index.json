@@ -25,6 +25,14 @@
       }
     }
   },
+  "real_contracts/solana_supply.sol": {
+    "__sources__": {
+      "real_contracts/solana_supply.sol": {
+        "content": "\r\n// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract Simple_Contract{\r\n}",
+        "file": "real_contracts/solana_supply.sol"
+      }
+    }
+  },
   "contract_1.sol": {
     "__sources__": {
       "contract_1.sol": {
