@@ -4,7 +4,38 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "quantity",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +64,11 @@
 	},
 	"sources": {
 		"real_contracts/solana_supply.sol": {
-			"keccak256": "0x148763a68de73b621322c62d590fb45bfa8014256ad7141d18ccaffee243a703",
+			"keccak256": "0x088854a4080484718bf89f5974066989711053678b86190634f68d96bb1f8fe5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://dfc4fcda659d5f3c75820b4e41896837ed262333f9c0df272059fe34e78fdcba",
-				"dweb:/ipfs/Qmah3EmwQLZrpqPswVJqyRcfWroLNC5T79DonPWa6sHTNd"
+				"bzz-raw://6a0b409d25705de3e9609a73a960bc9e098e790c6880dda1bd4f42a8762d484f",
+				"dweb:/ipfs/QmcVVoZKH3puE4RRZsjxJP95dc3Yt926tSEEgLzd6ZYZ1X"
 			]
 		}
 	},
