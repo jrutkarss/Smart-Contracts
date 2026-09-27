@@ -127,7 +127,12 @@ contract Functions{
 contract state{
     function global() public view returns(address){
         msg.sender;
-        return block.basefee,block.coinbase,block.timestamp
+        return msg.sender;
     }
-    
+    function time() public view returns(uint256){
+        return block.timestamp;
+    }
+    function blockNumber () public view returns(uint256){
+        return block.number;
+    }
 }

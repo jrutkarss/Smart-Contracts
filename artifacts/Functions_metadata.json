@@ -96,11 +96,11 @@
 	},
 	"sources": {
 		"C1_Basics.sol": {
-			"keccak256": "0x624a152ce6fc6d9e18e24d51ac666c9d269e97ff296466d63e85e95d85c574d9",
+			"keccak256": "0x85f66b8d0133fa5f766531768756bd425b76dea4f716d424f7981922645b6760",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bdc72a8d6c652cb3658535e5a7a53a3a8712e8a5fcf886840f76515cd410581f",
-				"dweb:/ipfs/QmeHLKoo4jYbgJNASEifhpnpMGzYvpb863MxNpy5zGpjJB"
+				"bzz-raw://0c01ad9a3fce20a08b8d523eb35f1dbe4926cf2e2adc050e1daf7442609deb04",
+				"dweb:/ipfs/QmNihqbnNnLv2X31ysb23wHHYwqvpzbdzZTLHr4d6roJCu"
 			]
 		},
 		"hardhat/console.sol": {

@@ -6,25 +6,8 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "abnorm",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "acc",
-						"type": "address"
-					}
-				],
-				"name": "getBalance",
+				"inputs": [],
+				"name": "blockNumber",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -36,33 +19,21 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "acc",
-						"type": "address"
-					}
-				],
-				"name": "getBalance2",
+				"inputs": [],
+				"name": "global",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "acc",
-						"type": "address"
-					}
-				],
-				"name": "getBalance3",
+				"inputs": [],
+				"name": "time",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -87,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"C1_Basics.sol": "cons"
+			"C1_Basics.sol": "state"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
