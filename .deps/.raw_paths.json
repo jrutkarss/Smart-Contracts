@@ -1,0 +1,4 @@
+{
+  "hardhat@3.18.0/console.sol": ".deps/npm/hardhat@3.18.0/console.sol",
+  "forge-std@1.1.2/console.sol": ".deps/npm/forge-std@1.1.2/console.sol"
+}

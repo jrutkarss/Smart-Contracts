@@ -20,12 +20,38 @@
 			},
 			{
 				"inputs": [],
+				"name": "bool2",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "c",
 				"outputs": [
 					{
 						"internalType": "int8",
 						"name": "",
 						"type": "int8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "check",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -65,6 +91,19 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fl",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -118,6 +157,19 @@
 			{
 				"inputs": [],
 				"name": "myName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "myString",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -222,6 +274,45 @@
 			},
 			{
 				"inputs": [],
+				"name": "num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "number",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "number2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "state",
 				"outputs": [
 					{
@@ -247,7 +338,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contract_1.sol": "MyContract"
+			"C1_Basics.sol": "MyContract"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -261,12 +352,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contract_1.sol": {
-			"keccak256": "0x97a411d089faa2ca85cbd938366f12c4bd31282b4ca52e7cb0181b3e1c785a6c",
+		"C1_Basics.sol": {
+			"keccak256": "0x624a152ce6fc6d9e18e24d51ac666c9d269e97ff296466d63e85e95d85c574d9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b3ff2f01d8ede593fbbe7dd79fd823c40825b3ad34f5cbf11427a66a689783cf",
-				"dweb:/ipfs/QmdyjyPb76AhWvyEUegyWFHc3UgmCrTVumNzCvHeVYFdor"
+				"bzz-raw://bdc72a8d6c652cb3658535e5a7a53a3a8712e8a5fcf886840f76515cd410581f",
+				"dweb:/ipfs/QmeHLKoo4jYbgJNASEifhpnpMGzYvpb863MxNpy5zGpjJB"
+			]
+		},
+		"hardhat/console.sol": {
+			"keccak256": "0x7434453e6d3b7d0e5d0eb7846ffdbc27f0ccf3b163591263739b628074dc103a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://49355f780520494d1d5a0f01858385e51bb5280ce0ecfb960f16995065dca395",
+				"dweb:/ipfs/QmSwJ6C5QLz6xKeQZS8wbwjU1KxRFTYfwbGmtzisd5sRW4"
 			]
 		}
 	},
