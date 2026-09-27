@@ -3,6 +3,7 @@
 pragma solidity ^0.8.26;
 
 contract MyContract {
+    bool aliasa = true;
     // 1. boolean data type 
     bool public myValue= true;
     // 2.Integers 
@@ -15,8 +16,8 @@ contract MyContract {
     // 3.address
     address public myAdd = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
     // 4.bytes or arrays
-    bytes1 public myBytes1 = 0x48;
-    bytes32 public myBytes32 = "Solidity";
+    bytes4 myname= 'Name';
+    bytes32 public myBytes32 = "Solidity is my language";
     string public myName= "Utkarss";
     
     // 5 . enum

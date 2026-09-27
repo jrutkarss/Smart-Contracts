@@ -85,19 +85,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "myBytes1",
-				"outputs": [
-					{
-						"internalType": "bytes1",
-						"name": "",
-						"type": "bytes1"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "myBytes32",
 				"outputs": [
 					{
@@ -275,11 +262,11 @@
 	},
 	"sources": {
 		"contract_1.sol": {
-			"keccak256": "0xc9902cded6260f82e33eee583e7829474080e8d85f729ad913e3505375352482",
+			"keccak256": "0x97a411d089faa2ca85cbd938366f12c4bd31282b4ca52e7cb0181b3e1c785a6c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4b205dad644095ef85d21e1bade0a2fe99fae43b79a006bf93f24ac252d6034f",
-				"dweb:/ipfs/QmVgWAb96RsJPVKmkdckFSdcyorgitKYts7TxcJ2kScRqj"
+				"bzz-raw://b3ff2f01d8ede593fbbe7dd79fd823c40825b3ad34f5cbf11427a66a689783cf",
+				"dweb:/ipfs/QmdyjyPb76AhWvyEUegyWFHc3UgmCrTVumNzCvHeVYFdor"
 			]
 		}
 	},

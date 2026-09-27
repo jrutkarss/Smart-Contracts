@@ -1,4 +1,20 @@
 {
+  "first_contract.sol": {
+    "__sources__": {
+      "first_contract.sol": {
+        "content": "// SPDX-License-Identifier: MIT\n// compiler version must be greater than or equal to 0.8.26 and less than 0.9.0\npragma solidity ^0.8.26;\n\ncontract HelloWorld {\n    string public greet = \"Hello World!\";\n    string private key = \"fgbxvjfxhgx vbcxvj bvxvjdbhdhvbjdxbvhjdjv jdvdvndvhdvhjd vjdvhjbkdsbvhjbdvj bvj dbv vibdvidsjvbvb\";\n}\n",
+        "file": "first_contract.sol"
+      }
+    }
+  },
+  "real_contracts/solana_supply.sol": {
+    "__sources__": {
+      "real_contracts/solana_supply.sol": {
+        "content": "\r\n// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract Simple_Contract{\r\n    int public quantity = 0;\r\n    uint64 private CWritefee = 10000;\r\n    uint64 private Creadfee = 2000;\r\n    address newAddress = 0x0000000000000000000000000000000000000000;\r\n    address public owner = msg.sender;\r\n    receive() external payable {\r\n        quantity ;\r\n        if(msg.value == CWritefee) {\r\n            quantity += 1;\r\n        } else if(msg.value == Creadfee) {\r\n            quantity -= 1;\r\n        } else {\r\n            revert(\"Invalid amount sent\");\r\n        }\r\n    }\r\n    \r\n}",
+        "file": "real_contracts/solana_supply.sol"
+      }
+    }
+  },
   "tests/newFile_test.sol": {
     "remix_tests.sol": "remix_tests.sol",
     "remix_accounts.sol": "remix_accounts.sol",
@@ -17,27 +33,11 @@
       }
     }
   },
-  "first_contract.sol": {
-    "__sources__": {
-      "first_contract.sol": {
-        "content": "// SPDX-License-Identifier: MIT\n// compiler version must be greater than or equal to 0.8.26 and less than 0.9.0\npragma solidity ^0.8.26;\n\ncontract HelloWorld {\n    string public greet = \"Hello World!\";\n    string private key = \"fgbxvjfxhgx vbcxvj bvxvjdbhdhvbjdxbvhjdjv jdvdvndvhdvhjd vjdvhjbkdsbvhjbdvj bvj dbv vibdvidsjvbvb\";\n}\n",
-        "file": "first_contract.sol"
-      }
-    }
-  },
   "contract_1.sol": {
     "__sources__": {
       "contract_1.sol": {
-        "content": "// SPDX-License-Identifier: MIT\n// compiler version must be greater than or equal to 0.8.26 and less than 0.9.0.0\npragma solidity ^0.8.26;\n\ncontract MyContract {\n    // 1. boolean data type \n    bool public myValue= true;\n    // 2.Integers \n    int public a = 12;\n    uint private b = 1234;\n    int8 public c = 74;\n    uint8 public d = 255;\n    int256 public e = -1344;\n    uint256 public f = 123456789;\n    // 3.address\n    address public myAdd = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;\n    // 4.bytes or arrays\n    bytes1 public myBytes1 = 0x48;\n    bytes32 public myBytes32 = \"Solidity\";\n    string public myName= \"Utkarss\";\n    \n    // 5 . enum\n    enum myEnum{\n        value_1,\n        value_2,\n        value_3\n    }\n    myEnum public my_variable;\n\n    // mapping types\n    mapping(address => uint) public myMap;\n    mapping(address => mapping(address => uint)) public nestedMap;\n\n    // structs\n    struct myStruct{\n        uint id;\n        address addr;\n    }\n    myStruct public myStructVariable;\n    myStruct[] public myStructArray;\n    \n    // enum\n    enum State {Created, Locked, Inactive}\n    State public state;\n\n\n}",
+        "content": "// SPDX-License-Identifier: MIT\n// compiler version must be greater than or equal to 0.8.26 and less than 0.9.0.0\npragma solidity ^0.8.26;\n\ncontract MyContract {\n    bool aliasa = true;\n    // 1. boolean data type \n    bool public myValue= true;\n    // 2.Integers \n    int public a = 12;\n    uint private b = 1234;\n    int8 public c = 74;\n    uint8 public d = 255;\n    int256 public e = -1344;\n    uint256 public f = 123456789;\n    // 3.address\n    address public myAdd = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;\n    // 4.bytes or arrays\n    bytes4 myname= 'Name';\n    bytes32 public myBytes32 = \"Solidity is my language\";\n    string public myName= \"Utkarss\";\n    \n    // 5 . enum\n    enum myEnum{\n        value_1,\n        value_2,\n        value_3\n    }\n    myEnum public my_variable;\n\n    // mapping types\n    mapping(address => uint) public myMap;\n    mapping(address => mapping(address => uint)) public nestedMap;\n\n    // structs\n    struct myStruct{\n        uint id;\n        address addr;\n    }\n    myStruct public myStructVariable;\n    myStruct[] public myStructArray;\n    \n    // enum\n    enum State {Created, Locked, Inactive}\n    State public state;\n\n\n}",
         "file": "contract_1.sol"
-      }
-    }
-  },
-  "real_contracts/solana_supply.sol": {
-    "__sources__": {
-      "real_contracts/solana_supply.sol": {
-        "content": "\r\n// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract Simple_Contract{\r\n    int public quantity = 0;\r\n    uint64 private CWritefee = 10000;\r\n    uint64 private Creadfee = 2000;\r\n    address newAddress = 0x0000000000000000000000000000000000000000;\r\n    address public owner = msg.sender;\r\n    receive() external payable {\r\n        quantity ;\r\n        if(msg.value == CWritefee) {\r\n            quantity += 1;\r\n        } else if(msg.value == Creadfee) {\r\n            quantity -= 1;\r\n        } else {\r\n            revert(\"Invalid amount sent\");\r\n        }\r\n    }\r\n    \r\n}",
-        "file": "real_contracts/solana_supply.sol"
       }
     }
   }
