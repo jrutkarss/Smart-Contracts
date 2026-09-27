@@ -120,4 +120,14 @@ contract Functions{
         uint256 balance = account3.balance;
         return balance;
     }
+    constructor(uint abnorm) {
+    
+    }
+}
+contract state{
+    function global() public view returns(address){
+        msg.sender;
+        return block.basefee,block.coinbase,block.timestamp
+    }
+    
 }
