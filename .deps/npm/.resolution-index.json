@@ -128,5 +128,13 @@
         "file": "C7_enum.sol"
       }
     }
+  },
+  "C8_mapping.sol": {
+    "__sources__": {
+      "C8_mapping.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract MyToken {\n    mapping(address => uint256) public _balances;\n    function setValue(uint256 _value) public {\n    _balances[msg.sender] += _value;\n    }\n}",
+        "file": "C8_mapping.sol"
+      }
+    }
   }
 }
