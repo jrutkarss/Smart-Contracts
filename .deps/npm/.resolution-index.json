@@ -100,8 +100,16 @@
   "C4_Moemory.sol": {
     "__sources__": {
       "C4_Moemory.sol": {
-        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract myContract{\n    string public full_message;\n    function greet(string memory name) public pure returns(string memory){\n        string memory message=\"Hi \";\n        return string.concat(message,name);\n    }\n    constructor(){\n       full_message = greet(\"Jane\");\n    }\n    // memory is  a modifiable data and call data is used for only call and view data data of string.\n    string public name = \"my_name\";\n    function my_function2(string calldata names)public pure returns (string calldata){\n        return names;\n    }\n\n\n\n}",
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract myContract{\n    string public full_message;\n    function greet(string memory name) public pure returns(string memory){\n        string memory message=\"Hi \";\n        return string.concat(message,name);\n    }\n    constructor(){\n       full_message = greet(\"Jane\");\n    }\n    // memory is  a modifiable data and call data is used for only call and view data data of string.\n    string public name = \"my_name\";\n    function my_function2(string calldata names)public pure returns (string calldata){\n        return names;\n    }\n\n\n\n\n}\n",
         "file": "C4_Moemory.sol"
+      }
+    }
+  },
+  "C5_Array.sol": {
+    "__sources__": {
+      "C5_Array.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract arrays{\n    string[] public my_array = [\"Trx\",\"Sol\",\"Eth\"];\n    function callarray() public view returns(string[] memory){\n        return my_array;\n    }\n\n}",
+        "file": "C5_Array.sol"
       }
     }
   }
