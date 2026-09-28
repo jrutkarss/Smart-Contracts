@@ -132,7 +132,7 @@
   "C8_mapping.sol": {
     "__sources__": {
       "C8_mapping.sol": {
-        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract MyToken {\n    mapping(address => uint256) public _balances;\n    function setValue(uint256 _value) public {\n    _balances[msg.sender] += _value;\n    }\n}",
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract MyToken {\n    mapping(address => uint256) public _balances;\n    function setValue(uint256 _value) public {\n    _balances[msg.sender] += _value;\n    }\n    function getValue() public view returns (uint256) {\n        return _balances[msg.sender];\n    }\n}",
         "file": "C8_mapping.sol"
       }
     }

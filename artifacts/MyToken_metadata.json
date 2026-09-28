@@ -25,6 +25,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getValue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -66,11 +79,11 @@
 	},
 	"sources": {
 		"C8_mapping.sol": {
-			"keccak256": "0x16a3112b7274b29b3485ccdbb59a91b71b61d3eb648f601c050a04391cbc1e9a",
+			"keccak256": "0x779c77fe63dbcae2c4a84f69cde7a5ca1ecb694f8a97d6a47483339bcf5c987e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9638e82d3ae0b80e75d8cb2044df045d589697a853398da5ec6083f0ab6ee436",
-				"dweb:/ipfs/Qmbmpnx1XicuscQcBvYzX9V4JERfqHib5BCXDbge9CyGjH"
+				"bzz-raw://9c33a098fc2378ad32486fbb18c21c3f853160b5f15ec95b3fbc46f75f0bae20",
+				"dweb:/ipfs/QmVEok3HQn9bgyVFL6V3639hQdHNR3DoPWbonsku68wRUq"
 			]
 		}
 	},

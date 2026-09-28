@@ -6,4 +6,7 @@ contract MyToken {
     function setValue(uint256 _value) public {
     _balances[msg.sender] += _value;
     }
+    function getValue() public view returns (uint256) {
+        return _balances[msg.sender];
+    }
 }
