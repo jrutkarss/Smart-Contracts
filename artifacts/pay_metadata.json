@@ -7,15 +7,14 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "balance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -23,7 +22,7 @@
 				"name": "owner",
 				"outputs": [
 					{
-						"internalType": "address",
+						"internalType": "address payable",
 						"name": "",
 						"type": "address"
 					}
@@ -45,7 +44,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"C9.constructor.sol": "derived"
+			"C10_events.sol": "pay"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -59,12 +58,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"C9.constructor.sol": {
-			"keccak256": "0xfe82ed891e028bd88c8f6c0caadfdf3b491ac1cdc247fecd3a0ee6a10cf2f8f2",
+		"C10_events.sol": {
+			"keccak256": "0x39d4804a1076753cff5c543a04835d7fb2bf35c3cd5b6fda29167ebe82c69374",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://07ea0f91e69ffc9a3b77759ba3df61df35f2923377023544773d350ab2d066a2",
-				"dweb:/ipfs/QmcPHZEduxqzpzsd485cdJMkdyg8imYQ5Hv9bqKsqMam4D"
+				"bzz-raw://9ed9a6548853111f3c97fdee85eca8041cfcf00cea34fee54414f66e64861c9b",
+				"dweb:/ipfs/QmZZ6gGKKRCu9Ed5JDgKC3LPAjNj6v8N8Y6wvWy2K2mt5W"
 			]
 		}
 	},

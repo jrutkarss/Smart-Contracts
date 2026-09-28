@@ -144,5 +144,13 @@
         "file": "C9.constructor.sol"
       }
     }
+  },
+  "C10_events.sol": {
+    "__sources__": {
+      "C10_events.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.13;\n\n// Events\ncontract events {\n    event transfer(address from, address to, uint amount);\n    function handler(address to, uint amount) public {\n        emit transfer(msg.sender, to, amount);\n    }\n}\n// Payable\ncontract pay {\n    address payable public owner;\n    constructor() {\n        owner = payable(msg.sender);\n    }\n    function deposit() public payable {\n        owner.transfer(msg.value);\n    }\n}\n// errors\ncontract errors {\n    address public owner;\n    uint public count;\n    constructor() {\n        owner = msg.sender;\n    }\n    function add() public {\n        count++;\n        require(owner == msg.sender);\n    }\n    // assert\n    function sub() public {\n        count--;\n        assert(owner == msg.sender);\n    }\n    function mult() public {\n        count * count;\n        if (owner != msg.sender) {\n            revert(\"You are not a owner\");\n        }\n    }\n}\n",
+        "file": "C10_events.sol"
+      }
+    }
   }
 }
