@@ -89,11 +89,27 @@
       }
     }
   },
+  "C6_Structure.sol": {
+    "__sources__": {
+      "C6_Structure.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.13;\n\ncontract structurs{\n    struct Coin{\n        string name;\n        uint price;\n        uint supply;\n        uint marketCap;\n    }\n    Coin public newListing;\n    function addCoin() public returns (Coin memory){\n        newListing = Coin(\"Bitcoin\", 30000, 19000000, 570000000000);\n        return newListing;\n    }\n    function getCoin() public view returns (Coin memory){\n        return newListing;\n    }\n    Coin public oldListing=Coin(\"SOLANA\",10,200000,2000000);\n\n}",
+        "file": "C6_Structure.sol"
+      }
+    }
+  },
   "C3_inherit.sol": {
     "__sources__": {
       "C3_inherit.sol": {
         "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract versatile {\n    int public values=13;\n    function adder() public returns(int){\n        return values = values+3;\n    }\n}\ncontract visa is versatile{\n    function subtract() public returns(int){\n        return values = values -3;\n    }\n}",
         "file": "C3_inherit.sol"
+      }
+    }
+  },
+  "C5_Array.sol": {
+    "__sources__": {
+      "C5_Array.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract arrays{\n    string[] public my_array = [\"Trx\",\"Sol\",\"Eth\"];\n    // reading the values from array\n    function callarray() public view returns(string[] memory){\n        return my_array;\n    }\n    //adding new elements in the array\n    function addinarray() public returns(string[] memory){\n        my_array.push(\"BNB\");\n        return my_array;\n    }\n    // Updating array\n    function updatearray() public returns(string[] memory){\n        my_array[1]=\"BTC\";\n        return my_array;\n    }\n    // Deleting array\n    function deletearray() public returns(string[] memory){\n        delete my_array[2];\n        return my_array;\n    }\n    // removing elements using pop\n    function pop_array_elem() public returns (string[] memory){\n        my_array.pop();\n        return my_array;\n    }\n    //length of array\n    function length_array() public view returns(uint){\n        return my_array.length;\n    }\n}",
+        "file": "C5_Array.sol"
       }
     }
   },
@@ -105,11 +121,11 @@
       }
     }
   },
-  "C5_Array.sol": {
+  "C7_enum.sol": {
     "__sources__": {
-      "C5_Array.sol": {
-        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract arrays{\n    string[] public my_array = [\"Trx\",\"Sol\",\"Eth\"];\n    // reading the values from array\n    function callarray() public view returns(string[] memory){\n        return my_array;\n    }\n    //adding new elements in the array\n    function addinarray() public returns(string[] memory){\n        my_array.push(\"BNB\");\n        return my_array;\n    }\n    // Updating array\n    function updatearray() public returns(string[] memory){\n        my_array[1]=\"BTC\";\n        return my_array;\n    }\n    // Deleting array\n    function deletearray() public returns(string[] memory){\n        delete my_array[2];\n        return my_array;\n    }\n    // removing elements using pop\n    function pop_array_elem() public returns (string[] memory){\n        my_array.pop();\n        return my_array;\n    }\n    //length of array\n    function length_array() public view returns(uint){\n        return my_array.length;\n    }\n}",
-        "file": "C5_Array.sol"
+      "C7_enum.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.9;\n\ncontract SimpleStorage {\n    enum myChoicelist{SMALL,MEDIUM,LARGE}\n    myChoicelist public choice = myChoicelist.MEDIUM;\n\n    function setSmall() public{\n        choice = myChoicelist.SMALL;\n        }\n    function setLarge() public {\n        choice = myChoicelist.LARGE;\n    }\n}",
+        "file": "C7_enum.sol"
       }
     }
   }
