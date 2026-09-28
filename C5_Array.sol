@@ -22,8 +22,13 @@ contract arrays{
         delete my_array[2];
         return my_array;
     }
+    // removing elements using pop
     function pop_array_elem() public returns (string[] memory){
         my_array.pop();
         return my_array;
+    }
+    //length of array
+    function length_array() public view returns(uint){
+        return my_array.length;
     }
 }

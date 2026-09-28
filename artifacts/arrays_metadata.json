@@ -45,6 +45,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "length_array",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -118,11 +131,11 @@
 	},
 	"sources": {
 		"C5_Array.sol": {
-			"keccak256": "0x2cfe1869a7dd429cb1c5b5ae8d16d2f779e84391601755053f78d0b361ce1e7d",
+			"keccak256": "0x559f5273c8c55e6c7ed036e0de763fdbd7b9b5f111b5d4459a5e833edd442af9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://218b2fc8fd94f848fcd96ff80b262c3a8c95292dfb85098290978abfddb8242d",
-				"dweb:/ipfs/QmZn7N9gSyoaY5h23sUhdNsZ5EqVbU6Nquyd8LB3zTBgFj"
+				"bzz-raw://c37b6e0acc203ca4b564af1b405091428268287bee59a9d98b797d2f2a4bc05f",
+				"dweb:/ipfs/QmSmCmoxgLVP87j5wfYxtpcCyHcNNsb3aoVuBwCHFi98zy"
 			]
 		}
 	},
