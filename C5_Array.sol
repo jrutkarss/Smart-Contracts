@@ -19,7 +19,11 @@ contract arrays{
     }
     // Deleting array
     function deletearray() public returns(string[] memory){
-        delete my_array[3];
+        delete my_array[2];
+        return my_array;
+    }
+    function pop_array_elem() public returns (string[] memory){
+        my_array.pop();
         return my_array;
     }
 }

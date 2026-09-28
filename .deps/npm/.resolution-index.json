@@ -108,7 +108,7 @@
   "C5_Array.sol": {
     "__sources__": {
       "C5_Array.sol": {
-        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract arrays{\n    string[] public my_array = [\"Trx\",\"Sol\",\"Eth\"];\n    // reading the values from array\n    function callarray() public view returns(string[] memory){\n        return my_array;\n    }\n    //adding new elements in the array\n    function addinarray() public returns(string[] memory){\n        my_array.push(\"BNB\");\n        return my_array;\n    }\n    // Updating array\n    function updatearray() public returns(string[] memory){\n        my_array[1]=\"BTC\";\n        return my_array;\n    }\n    // Deleting array\n    function deletearray() public returns(string[] memory){\n        delete my_array[3];\n        return my_array;\n    }\n}",
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract arrays{\n    string[] public my_array = [\"Trx\",\"Sol\",\"Eth\"];\n    // reading the values from array\n    function callarray() public view returns(string[] memory){\n        return my_array;\n    }\n    //adding new elements in the array\n    function addinarray() public returns(string[] memory){\n        my_array.push(\"BNB\");\n        return my_array;\n    }\n    // Updating array\n    function updatearray() public returns(string[] memory){\n        my_array[1]=\"BTC\";\n        return my_array;\n    }\n    // Deleting array\n    function deletearray() public returns(string[] memory){\n        delete my_array[2];\n        return my_array;\n    }\n    function pop_array_elem() public returns (string[] memory){\n        my_array.pop();\n        return my_array;\n    }\n}",
         "file": "C5_Array.sol"
       }
     }

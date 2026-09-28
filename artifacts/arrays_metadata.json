@@ -65,6 +65,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "pop_array_elem",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "updatearray",
 				"outputs": [
 					{
@@ -105,11 +118,11 @@
 	},
 	"sources": {
 		"C5_Array.sol": {
-			"keccak256": "0x2f63ddde93d1637fcff800a173f61140d9cadac1961cb872f731dba7d825ed19",
+			"keccak256": "0x2cfe1869a7dd429cb1c5b5ae8d16d2f779e84391601755053f78d0b361ce1e7d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://12c06bf156605ee65ad8442db2b32a40dd7743ff9dcd680197944e8ac1e505f7",
-				"dweb:/ipfs/QmUk68HNs6KzU86KRQDVdmyEqVgPAFk34nBZK7GNYGscay"
+				"bzz-raw://218b2fc8fd94f848fcd96ff80b262c3a8c95292dfb85098290978abfddb8242d",
+				"dweb:/ipfs/QmZn7N9gSyoaY5h23sUhdNsZ5EqVbU6Nquyd8LB3zTBgFj"
 			]
 		}
 	},
