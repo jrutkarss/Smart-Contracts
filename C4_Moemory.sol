@@ -15,8 +15,4 @@ contract myContract{
     function my_function2(string calldata names)public pure returns (string calldata){
         return names;
     }
-
-
-
-
 }

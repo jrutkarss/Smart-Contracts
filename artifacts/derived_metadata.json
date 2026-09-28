@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"C9.constructor.sol": "derived"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"C9.constructor.sol": {
+			"keccak256": "0x799f2b255dc6a12d5a4551d3559def7b74584404e0fc68c2c98dc309f260e6f1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://176bae43ea14a2de8b83d6db1d525c80568fe9322832b5db9ce08c1d6ca1a9a8",
+				"dweb:/ipfs/QmddvXEeCcmSjoHboYGycbf6h21CGeKmqaD7XBhdXH1WuQ"
+			]
+		}
+	},
+	"version": 1
+}
