@@ -17,19 +17,6 @@
 				],
 				"stateMutability": "pure",
 				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "subtract",
-				"outputs": [
-					{
-						"internalType": "uint32",
-						"name": "",
-						"type": "uint32"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -45,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"C14_OOPS.sol": "base"
+			"C14_OOPS.sol": "myabs"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},

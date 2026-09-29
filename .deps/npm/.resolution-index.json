@@ -168,5 +168,29 @@
         "file": "C12_Cryptography.sol"
       }
     }
+  },
+  "C9_constructor.sol": {
+    "__sources__": {
+      "C9_constructor.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.13;\n\ncontract base{\n    address public owner;\n    uint public balance;\n    constructor(uint _balance) {\n        owner = msg.sender;\n        balance = _balance;\n    }\n\n}\ncontract derived is base(10){\n    }\n",
+        "file": "C9_constructor.sol"
+      }
+    }
+  },
+  "C13_Libraries.sol": {
+    "__sources__": {
+      "C13_Libraries.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.13;\n\nlibrary mylib{\n    function add() public pure returns (uint32){\n        return 5+4;\n    }\n    function subtract() public pure returns(uint32){\n        return 5-4;\n    }\n}\ncontract abs{\n    function call() public pure returns(uint32){\n        return mylib.add();\n    }\n}",
+        "file": "C13_Libraries.sol"
+      }
+    }
+  },
+  "C14_OOPS.sol": {
+    "__sources__": {
+      "C14_OOPS.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.13;\n\ncontract base{\n    function add() public pure virtual  returns (uint32){\n        return 5+4;\n    }\n    function subtract() public pure returns(uint32){\n        return 5-4;\n    }\n}\ncontract abs is base{\n    function add() public pure override  returns(uint32){\n        return 6;\n    }\n}\n\n// abstract\nabstract contract myabs{\n    function add() public pure virtual returns (uint32);\n}\ninterface myinterf {\n    function inf() pure external  returns(address);\n}\n",
+        "file": "C14_OOPS.sol"
+      }
+    }
   }
 }
