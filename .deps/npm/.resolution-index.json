@@ -129,14 +129,6 @@
       }
     }
   },
-  "C4_Moemory.sol": {
-    "__sources__": {
-      "C4_Moemory.sol": {
-        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract myContract{\n    string public full_message;\n    function greet(string memory name) public pure returns(string memory){\n        string memory message=\"Hi \";\n        return string.concat(message,name);\n    }\n    constructor(){\n       full_message = greet(\"Jane\");\n    }\n    // memory is  a modifiable data and call data is used for only call and view data data of string.\n    string public name = \"my_name\";\n    function my_function2(string calldata names)public pure returns (string calldata){\n        return names;\n    }\n}",
-        "file": "C4_Moemory.sol"
-      }
-    }
-  },
   "C9.constructor.sol": {
     "__sources__": {
       "C9.constructor.sol": {
@@ -150,6 +142,30 @@
       "C10_events.sol": {
         "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.13;\n\n// Events\ncontract events {\n    event transfer(address from, address to, uint amount);\n    function handler(address to, uint amount) public {\n        emit transfer(msg.sender, to, amount);\n    }\n}\n// Payable\ncontract pay {\n    address payable public owner;\n    constructor() {\n        owner = payable(msg.sender);\n    }\n    function deposit() public payable {\n        owner.transfer(msg.value);\n    }\n}\n// errors\ncontract errors {\n    address public owner;\n    uint public count;\n    constructor() {\n        owner = msg.sender;\n    }\n    function add() public {\n        count++;\n        require(owner == msg.sender);\n    }\n    // assert\n    function sub() public {\n        count--;\n        assert(owner == msg.sender);\n    }\n    function mult() public {\n        count * count;\n        if (owner != msg.sender) {\n            revert(\"You are not a owner\");\n        }\n    }\n}\n",
         "file": "C10_events.sol"
+      }
+    }
+  },
+  "C4_Moemory.sol": {
+    "__sources__": {
+      "C4_Moemory.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract myContract{\n    string public full_message;\n    function greet(string memory name) public pure returns(string memory){\n        string memory message=\"Hi \";\n        return string.concat(message,name);\n    }\n    constructor(){\n       full_message = greet(\"Jane\");\n    }\n    // memory is  a modifiable data and call data is used for only call and view data data of string.\n    string public name = \"my_name\";\n    function my_function2(string calldata names)public pure returns (string calldata){\n        return names;\n    }\n}",
+        "file": "C4_Moemory.sol"
+      }
+    }
+  },
+  "C11_function_modifiers.sol": {
+    "__sources__": {
+      "C11_function_modifiers.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.13;\n\ncontract modifiers{\n    address public owner;\n    constructor(){\n        owner = msg.sender;\n    }\n    \n    modifier onlyOwner{\n        require(msg.sender==owner);\n        _;\n        }\n    function call() public onlyOwner{\n        // Encapsulate the data in the unit but not in the function\n    }\n}",
+        "file": "C11_function_modifiers.sol"
+      }
+    }
+  },
+  "C12_Cryptography.sol": {
+    "__sources__": {
+      "C12_Cryptography.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.17;\n\ncontract hashfunction{\n    bytes32 public hashpass;\n     bytes32 public hashpass2;\n      bytes32 public hashpass3;\n    function getpass( string memory _password)public returns(bytes32){\n        hashpass=keccak256(abi.encodePacked(_password));\n        // sha256\n        hashpass2 = sha256(abi.encodePacked(_password));\n        // ripemd160\n        hashpass = ripemd160(abi.encodePacked(_password));\n        return hashpass3;\n}}",
+        "file": "C12_Cryptography.sol"
       }
     }
   }

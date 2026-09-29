@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "call",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"C11_function_modifiers.sol": "modifiers"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"C11_function_modifiers.sol": {
+			"keccak256": "0x4c223bdd2333090b8960565fa0e19b21707ca852964a45512b0a066d39916113",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0c0fc10ffc5e7dc127a20f770c034ea6e1cc8dc093acfc75fb03d28cdad5aa95",
+				"dweb:/ipfs/QmWYLfYqXehdJSULryRe2pszit6bm9zBioncGTDEqy56un"
+			]
+		}
+	},
+	"version": 1
+}
